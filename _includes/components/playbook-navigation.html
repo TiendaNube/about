@@ -1,5 +1,5 @@
 <ul>
-    {% for post in site.playbook %}
+    {% for post in site.[page.collection] %}
         <li>
             <a class="js-anchor" href="#{{ post.slug }}">{{ post.title }}</a>
         </li>

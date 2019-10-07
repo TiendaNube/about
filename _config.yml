@@ -6,6 +6,11 @@ baseurl: ""
 url: "https://tiendanube.github.io/about" 
 
 collections: 
-  playbook:
+  about:
     output: true
     permalink: /:collection/:path
+  books:
+    output: true
+    permalink: /:collection/:path
+
+collections_dir: collections

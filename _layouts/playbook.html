@@ -14,11 +14,10 @@
         </div>
 
         <div class="content">
-            <header>{{ content }}</header>
             {%- comment -%} All posts {%- endcomment -%}
-            {% for post in site.playbook %}
+            {% for post in site[page.collection] %}
                 <section id="{{ post.slug }}"></section>
-                    {{ post.content }}
+                    {{ post.content | markdownify }}
                 </section>
             {% endfor %}
         </div>

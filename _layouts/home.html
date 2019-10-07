@@ -4,9 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.url }}">
 </head>
 <body>
     {{ content }}
+
+    <ul>
+        {% for item in site.collections %}
+            <li><a href="{{ site[item.label][0].url }}">{{ site[item.label][0].title }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
