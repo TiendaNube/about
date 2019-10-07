@@ -11,7 +11,7 @@
 
     <ul>
         {% for item in site.collections %}
-            <li><a href="{{ site[item.label][0].url }}">{{ site[item.label][0].title }}</a></li>
+            <li><a href="{{ site[item.label][0].url | prepend: site.url }}">{{ site[item.label][0].title }}</a></li>
         {% endfor %}
     </ul>
 </body>
