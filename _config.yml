@@ -2,8 +2,8 @@
 title: Tiendanube
 email: support@tiendanube.com
 description:
-baseurl: "https://itbruno.github.io/product"
-url: "https://itbruno.github.io/product" 
+baseurl: ""
+url: "https://tiendanube.github.io/about-our-product-team" 
 
 collections: 
   playbook:
