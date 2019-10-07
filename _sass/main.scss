@@ -1,0 +1,29 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+main {
+  display: flex;
+}
+
+.playbook-navigation {
+  display: flex;
+  padding: 30px;
+  max-width: 300px;
+  position: fixed;
+  top: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  padding: 30px;
+  max-width: 50%;
+}

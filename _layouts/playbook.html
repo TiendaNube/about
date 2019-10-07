@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.url }}">
+</head>
+<body>
+    <main>
+        {%- comment -%} Navigation {%- endcomment -%}
+        <div class="playbook-navigation">
+            {% include components/playbook-navigation.html %}
+        </div>
+
+        <div class="content">
+            <header>{{ content }}</header>
+            {%- comment -%} All posts {%- endcomment -%}
+            {% for post in site.playbook %}
+                <section id="{{ post.slug }}"></section>
+                    {{ post.content }}
+                </section>
+            {% endfor %}
+        </div>
+    </main>
+    
+</body>
+</html>

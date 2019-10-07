@@ -1,0 +1,7 @@
+<ul>
+    {% for post in site.playbook %}
+        <li>
+            <a class="js-anchor" href="#{{ post.slug }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
