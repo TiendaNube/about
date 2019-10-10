@@ -1,19 +1,33 @@
 {%- comment -%} Head {%- endcomment -%}
 {% include partials/head.html %}
-    <main>
-        {%- comment -%} Navigation {%- endcomment -%}
-        <div class="playbook-navigation">
-            {% include components/playbook-navigation.html %}
-        </div>
+{% include partials/header.html %}
 
-        <div class="content">
-            {%- comment -%} All posts {%- endcomment -%}
-            {% for post in site[page.collection] %}
-                <section id="{{ post.slug }}"></section>
-                    {{ post.content | markdownify }}
-                </section>
-            {% endfor %}
+<main class="m-top-double m-bottom-double p-vertical">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                {%- comment -%} Navigation {%- endcomment -%}
+                <div class="playbook-navigation">
+                    {% include components/playbook-navigation.html %}
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <article class="content">
+                    {%- comment -%} All posts {%- endcomment -%}
+                    {% for post in site[page.collection] %}
+                        <section id="{{ post.slug }}"></section>
+                            {{ post.content | markdownify }}
+                        </section>
+                    {% endfor %}
+                </article>
+            </div>
         </div>
-    </main>
+    </div>
+    
+
+    
+</main>
+
 {%- comment -%} Footer {%- endcomment -%}
 {% include partials/footer.html %}

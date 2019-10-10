@@ -1,0 +1,10 @@
+.nav .navbar-link {
+    font-size: $type-baseline-small;
+    font-weight: 500;
+
+    &:hover {
+        color: $primary-blue;
+        background-color: transparent;
+        border: 0;
+    }
+}

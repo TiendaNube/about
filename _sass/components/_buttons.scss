@@ -1,0 +1,353 @@
+// Buttons
+
+.btn {
+    text-shadow: none;
+    border-radius: 100px;
+    font-size: $type-baseline-small;
+    padding: 12px 16px;
+    transition: all ease-in-out .15s;
+    @include primary-font(normal);
+
+    &[disabled] {
+        opacity: 1;
+        user-select: none;
+        pointer-events: none;
+
+        @include make-contrast($color-light-gray, $nube-white);
+
+    }
+
+    &.btn-facebook {
+        color: #ffffff;
+        background: #3b5998;
+
+        @include breakpoint(xs) {
+            padding-left: $baseline + $baseline-quarter;
+        }
+
+        i {
+            position: absolute;
+            left: 30px;
+            margin-top: -4px;
+        }
+    }
+
+    &.btn-secondary {
+        font-weight: 400;
+        color: $button-primary-color;
+        border: 1px solid $button-primary-color;
+        background-color: transparent;
+        @include primary-font(normal);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $button-primary-color;
+            color: $white;
+        }
+
+        &-filled {
+            background-color: $white;
+        }
+
+        &-inverted {
+            @include make-contrast(transparent, $white);
+            border: 1px solid $white;
+
+            &:hover {
+                color: $white;
+                border: 1px solid darken($button-primary-color, 15%);
+                background: darken($button-primary-color, 15%);
+            }
+        }
+
+        &-university {
+            @include make-contrast(transparent, $color-university);
+            border-color: $color-university;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &:active:hover,
+            &:active:focus {
+                @include make-contrast($color-university-60, $dark-blue);
+            }
+        }
+
+        &-layouts {
+            @include make-contrast($white, $dark-blue);
+            border-color: $dark-blue;
+
+            &:hover,
+            &:focus,
+            &:active {
+                @include make-contrast($dark-blue, $color-layouts);
+            }
+        }
+    }
+
+    &.btn-secondary-apps {
+        color: $color-apps;
+        border: 1px solid $color-apps;
+        background: $white;
+        @include primary-font(normal);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $color-apps;
+            color: $white;
+        }
+
+        &.dark {
+            &:hover,
+            &:focus,
+            &:active {
+                background: $deep-blue;
+                color: $white;
+            }
+        }
+    }
+
+    &.btn-primary-inverse {
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus[disabled] {
+            color: $button-primary-color !important;
+            background: $white !important;
+            opacity: .8;
+        }
+    }
+
+    &.btn-default {
+        background: transparent;
+        border: 1px solid $dark-blue;
+        color: $dark-blue;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $dark-blue;
+            color: $white;
+            border: 1px solid $dark-blue;
+        }
+
+        &.active {
+            background: radial-gradient(circle, $white -40%, $button-primary-color 50%, $button-primary-color);
+            color: $white;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &.btn-deactive {
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &-unstyled,
+    &-unstyled:hover,
+    &-unstyled:focus {
+        background: none;
+        padding: 0;
+        border: 0;
+        outline: 0;
+    }
+}
+
+.btn-link {
+    color: $button-primary-color;
+    border: 0;
+    border-bottom: 2px solid $button-primary-color;
+    border-radius: 0;
+    padding: 0 0 2px !important;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: $type-baseline-small;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $sky-blue !important;
+        border-bottom-color: $sky-blue !important;
+        background: transparent !important;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 5px auto -webkit-focus-ring-color !important;
+        outline-offset: -2px;
+    }
+
+    &-sm {
+        font-size: $type-baseline-tiny;
+    }
+
+    &-no-border {
+        border-bottom: 0;
+    }
+
+    &-apps {
+        color: $color-apps;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-apps-light !important;
+            border-bottom-color: $color-apps-light !important;
+            background: transparent !important;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-group > .btn {
+    white-space: initial;
+    line-height: initial;
+}
+
+.btn-primary {
+    background-color: $button-primary-color;
+    color: $white;
+    border: 0;
+    background-image: none;
+    box-shadow: none;
+
+    &:hover[disabled] {
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: $button-primary-color-hover;
+    }
+
+    &-premium {
+        @include make-contrast($color-business, $white);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background-color: darken($color-business, 10%);
+            color: $white;
+        }
+    }
+
+    &-inverse {
+        background-color: $white;
+        color: $button-primary-color;
+    }
+
+    &-apps {
+        background-color: $color-apps;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover,
+        &:active:focus {
+            background-color: $color-apps-light;
+        }
+    }
+
+    &-layouts {
+        @include make-contrast($color-layouts, $dark-blue);
+        border: 1px solid $color-layouts;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover,
+        &:active:focus {
+            @include make-contrast($color-layouts-light, $dark-blue);
+            border-color: $color-layouts;
+        }
+    }
+
+    &-experts {
+        background-color: $color-experts;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover,
+        &:active:focus {
+            background-color: $color-experts-light;
+        }
+    }
+
+    &-university {
+        @include make-contrast($color-university, $dark-blue);
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover,
+        &:active:focus {
+            @include make-contrast($color-university-60, $dark-blue);
+        }
+    }
+}
+
+.open .dropdown-toggle.btn-primary {
+    background-color: $button-primary-color;
+    opacity: .8;
+}
+
+.btn-secondary-inverted {
+    color: $white;
+    border: 1px solid $white;
+    background: transparent;
+
+    &:hover {
+        color: $white;
+        border: 1px solid darken($button-primary-color, 15%);
+        background: darken($button-primary-color, 15%);
+    }
+}
+
+.btn-jumbo {
+    font-size: $type-baseline-regular;
+    padding: 14px 25px;
+}
+
+.btn-lg {
+    font-size: $type-baseline-regular;
+    padding: 15px 20px;
+    border-radius: 100px;
+    box-shadow: none;
+    height: 55px;
+}
+
+.btn:focus,
+.btn-lg:focus {
+    color: $white;
+    outline: none;
+}
+
+
+
+// Sizes
+.btn-sm {
+    padding: 8px 15px;
+}
+
+.btn-wide {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+@media screen and (max-width: 500px) {
+    .btn-xs-adaptable {
+        @include font-size(1);
+        padding: 5px;
+    }
+}
