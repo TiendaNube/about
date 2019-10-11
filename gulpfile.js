@@ -48,9 +48,9 @@ function clean(cb) {
 
 
 function watcher() {
-	watch(path.scripts, () => [clean, jsmin]);
-	watch(path.styles, () => [clean, styles]);
-	watch(path.images, () => [clean, imageCompress]);
+	watch(path.scripts, jsmin);
+	watch(path.styles, styles);
+	watch(path.images, imageCompress);
 }
 
 exports.clean = clean;

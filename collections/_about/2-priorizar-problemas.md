@@ -4,7 +4,7 @@ title:  "Priorizar problemas"
 ---
 
 Una vez que entendimos los problemas que nuestros clientes están intentando resolver, los priorizamos para decidir en cuál nos enfocamos. Para esto utilizamos un framework que se llama RICE (gracias Intercom!). Es una priorización super sencilla que se basa en:
-  - Reach: a cuántos clientes les estamos solucionando el problema. 
+  - Reach: a cuántos clientes les estamos solucionando el problema.
   - Impact: cuál es el impacto de solucionar este problema.
   - Confidence: qué tanto confiamos en el resto de las estimaciones (50%: lo mismo que tirar una moneda — 100%: somos las Marta/Messi de la estimación).
   - Effort: cuánto tiempo le llevaría a una persona hacerlo (lo medimos en meses).

@@ -7,17 +7,22 @@
         <div class="row">
             <div class="col-sm-4">
                 {%- comment -%} Navigation {%- endcomment -%}
-                <div class="playbook-navigation">
-                    {% include components/playbook-navigation.html %}
-                </div>
+                {% include components/playbook-navigation.html %}
             </div>
 
             <div class="col-sm-8">
                 <article class="article">
-                    <section id="{{ page.slug }}">
+					<section id="{{ page.slug }}">
+						<header class="section-header">
+							<div class="section-header-title-count" style="background-image: url({{ '/assets/images/backgrounds/section-title-1.png' | prepend: site.url}})">
+								1
+							</div>
+
+							<h2>{{ page.title }}</h2>
+						</header>
+
                         {{content}}
                     </section>
-
                     {%- comment -%} All posts {%- endcomment -%}
                     {% for post in site[page.collection] %}
                         {% if forloop.index > 1 %}
@@ -31,7 +36,7 @@
                             <section id="{{ post.slug }}">
                                 <header class="section-header">
                                     <div class="section-header-title-count" style="background-image: url({{title_bg | prepend: site.url}})">
-                                        {{ forloop.index0 }}
+                                        {{ forloop.index }}
                                     </div>
 
                                     <h2>{{ post.title }}</h2>

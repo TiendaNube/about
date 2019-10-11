@@ -35,5 +35,9 @@
             color: $dark-blue;
             font-weight: 500;
         }
-    }
+	}
+
+	&.is-fixed {
+		top: 0;
+	}
 }
