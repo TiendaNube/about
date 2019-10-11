@@ -15,10 +15,18 @@
 					<section id="{{ page.slug }}">
 						<header class="section-header">
 							<div class="section-header-title-count" style="background-image: url({{ '/assets/images/backgrounds/section-title-1.png' | prepend: site.url}})">
-								1
+                                <span class="m-top-quarter">01</span>
+                            </div>
+							<div class="section-title-content">
+                            	{% include components/share-icons.html 
+                                    meta_title=page.seo_title
+                                    meta_description= page.seo_description
+                                    meta_url= page.url
+                                    twitter_username= "tiendanube"
+                                    twitter_hash="#tiendanube-engineering"
+                                %}
+								<h2 class="m-top-none">{{ page.title }}</h2>
 							</div>
-
-							<h2>{{ page.title }}</h2>
 						</header>
 
                         {{content}}
@@ -36,10 +44,21 @@
                             <section id="{{ post.slug }}">
                                 <header class="section-header">
                                     <div class="section-header-title-count" style="background-image: url({{title_bg | prepend: site.url}})">
-                                        {{ forloop.index }}
+                                        <span class="m-top-quarter">{% if forloop.index < 10 %}0{%endif%}{{ forloop.index }}</span>
                                     </div>
 
-                                    <h2>{{ post.title }}</h2>
+                                    {% capture section_url %}{{page.url}}/#{{post.slug}}{% endcapture %}
+
+                                    <div class="section-title-content">
+                                        {% include components/share-icons.html 
+                                            meta_title = post.title
+                                            meta_description = post.excerpt
+                                            meta_url = section_url
+                                            twitter_username= "tiendanube"
+                                            twitter_hash="#tiendanube-engineering"
+                                        %}
+                                        <h2 class="m-top-none">{{ post.title }}</h2>
+                                    </div>
                                 </header>
 
                                 {{ post.content | markdownify }}

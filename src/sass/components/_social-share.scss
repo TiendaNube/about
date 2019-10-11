@@ -1,0 +1,30 @@
+.social-share {
+    display: flex;
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+
+    .icon {
+        width: 18px;
+        display: inline-block;
+        transition: all .2s ease;
+
+        &-twitter:hover path {
+            fill: $brand-color-twitter;
+        }
+
+        &-facebook:hover path {
+            fill: $brand-color-facebook;
+        }
+
+        &-whatsapp:hover path {
+            fill: $brand-color-whatsapp;
+        }
+    }
+}

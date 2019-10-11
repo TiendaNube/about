@@ -9,7 +9,7 @@
 		<ul class="list-unstyled">
 			{% for post in site.[page.collection] %}
 				<li>
-					<a class="js-anchor nav-link" href="#{{ post.slug }}">
+					<a class="js-anchor nav-link{% if forloop.first %} active{% endif %}" href="#{{ post.slug }}">
 						{{ forloop.index }}. {{ post.title }}
 					</a>
 				</li>

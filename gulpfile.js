@@ -46,11 +46,22 @@ function clean(cb) {
 	return del('assets/', cb);
 }
 
+function clean_css(cb) {
+	return del('assets/css', cb);
+}
+
+function clean_js(cb) {
+	return del('assets/js', cb);
+}
+
+function clean_images(cb) {
+	return del('assets/images', cb);
+}
 
 function watcher() {
-	watch(path.scripts, jsmin);
-	watch(path.styles, styles);
-	watch(path.images, imageCompress);
+	watch(path.scripts, series(clean_js, jsmin));
+	watch(path.styles, series(clean_css, styles));
+	watch(path.images, series(clean_images, imageCompress));
 }
 
 exports.clean = clean;
