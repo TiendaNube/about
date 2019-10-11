@@ -13,12 +13,33 @@
             </div>
 
             <div class="col-sm-8">
-                <article class="content">
+                <article class="article">
+                    <section id="{{ page.slug }}">
+                        {{content}}
+                    </section>
+                    
                     {%- comment -%} All posts {%- endcomment -%}
                     {% for post in site[page.collection] %}
-                        <section id="{{ post.slug }}"></section>
-                            {{ post.content | markdownify }}
-                        </section>
+                        {% if forloop.index > 1 %}
+                            {% assign count = forloop.index0 | modulo:2 %}
+                            {% if count == 0 %}
+                                {% assign title_bg = "/assets/images/backgrounds/section-title-1.png" %}
+                            {% else %}
+                                {% assign title_bg = "/assets/images/backgrounds/section-title-2.png" %}
+                            {% endif %}
+
+                            <section id="{{ post.slug }}">
+                                <header class="section-header">
+                                    <div class="section-header-title-count" style="background-image: url({{title_bg | prepend: site.url}})">
+                                        {{ forloop.index0 }}
+                                    </div>
+                                    
+                                    <h2>{{ post.title }}</h2>
+                                </header>
+                                
+                                {{ post.content | markdownify }}
+                            </section>
+                        {% endif %}
                     {% endfor %}
                 </article>
             </div>

@@ -1,0 +1,23 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: $baseline;
+
+    .section-header-title-count {
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin-left: -$baseline;
+        margin-right: $baseline-half;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $type-baseline-huge;
+        color: $dark-blue;
+        font-weight: 500;
+    }
+}
+
+.article section {
+    margin-bottom: $baseline-double;
+}

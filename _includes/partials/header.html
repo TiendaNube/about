@@ -6,8 +6,9 @@
             </div>
             <div class="col-sm-7 col-sm-offset-2">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="navbar-link c-white" href="#">Ingeníeria</a></li>
-                    <li><a class="navbar-link c-white" href="#">Trabajá en Tiendanube</a></li>
+                    {% for item in site.data.navigation %}
+                        <li><a class="navbar-link c-white" href="{{ item.link }}">{{ item.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>

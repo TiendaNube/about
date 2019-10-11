@@ -1,7 +1,17 @@
-<ul>
-    {% for post in site.[page.collection] %}
-        <li>
-            <a class="js-anchor" href="#{{ post.slug }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-</ul>
+<div class="playbook-navigation">
+    <div class="playbook-navigation-title">
+        <img src="/assets/images/icons/list.png" width="50" alt="indice" class="icon img-responsive">
+        <h2>Índice</h2>
+    </div>
+    
+    
+    <ul class="list-unstyled">
+        {% for post in site.[page.collection] %}
+            <li>
+                <a class="js-anchor nav-link" href="#{{ post.slug }}">
+                    {{ forloop.index }}. {{ post.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
