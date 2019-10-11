@@ -17,7 +17,7 @@
                     <section id="{{ page.slug }}">
                         {{content}}
                     </section>
-                    
+
                     {%- comment -%} All posts {%- endcomment -%}
                     {% for post in site[page.collection] %}
                         {% if forloop.index > 1 %}
@@ -33,10 +33,10 @@
                                     <div class="section-header-title-count" style="background-image: url({{title_bg | prepend: site.url}})">
                                         {{ forloop.index0 }}
                                     </div>
-                                    
+
                                     <h2>{{ post.title }}</h2>
                                 </header>
-                                
+
                                 {{ post.content | markdownify }}
                             </section>
                         {% endif %}
@@ -45,9 +45,9 @@
             </div>
         </div>
     </div>
-    
 
-    
+
+
 </main>
 
 {%- comment -%} Footer {%- endcomment -%}

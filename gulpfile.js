@@ -1,5 +1,5 @@
 // Packages
-var { watch, src, dest, series } = require("gulp"),
+const { watch, src, dest, series } = require("gulp"),
 	sass = require("gulp-sass"),
 	imagemin = require("gulp-imagemin"),
 	uglify = require("gulp-uglify"),
@@ -8,7 +8,7 @@ var { watch, src, dest, series } = require("gulp"),
 
 const path = {
 	styles: 'src/sass/**/*.scss',
-	scripts: ['src/js/*.js'],
+	scripts: ['node_modules/jquery/dist/jquery.js', 'src/js/components/*.js', 'src/js/*.js'],
 	images: 'src/images/**/*.{jpg,gif,png}'
 }
 
@@ -48,9 +48,9 @@ function clean(cb) {
 
 
 function watcher() {
-	watch(path.scripts, jsmin);
-	watch(path.styles, styles);
-	watch(path.images, imageCompress);
+	watch(path.scripts, () => [clean, jsmin]);
+	watch(path.styles, () => [clean, styles]);
+	watch(path.images, () => [clean, imageCompress]);
 }
 
 exports.clean = clean;
