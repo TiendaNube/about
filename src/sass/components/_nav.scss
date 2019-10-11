@@ -29,7 +29,17 @@
 
     .nav-link {
         padding: $baseline-quarter 0;
-        color: $color-mid-gray;
+		color: $color-mid-gray;
+		transition: color .2s ease;
+
+		&:hover {
+			color: $primary-blue;
+		}
+
+		&,
+		&:hover {
+			text-decoration: none;
+		}
 
         &.active {
             color: $dark-blue;
