@@ -3,7 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.url }}">
+	<title>{{ page.title }} - {{ site.title }}</title>
+	{% include partials/fonts.html %}
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.url }}">
 </head>
 <body class="{{ include.body_class }}">
