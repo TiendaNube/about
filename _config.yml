@@ -3,7 +3,8 @@ title: Tiendanube
 email: support@tiendanube.com
 description:
 baseurl: ""
-url: "https://tiendanube.github.io/about" 
+url: "https://tiendanube.github.io/about"
+company_url: "https://tiendanube.com"
 
 collections: 
   about:
