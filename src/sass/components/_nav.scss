@@ -49,5 +49,24 @@
 
 	&.is-fixed {
 		top: 0;
-	}
+    }
+    
+    @include breakpoint(xs) {
+        background-color: $body-bg;
+        margin: -100px 20px 0px 20px;
+        border-radius: 8px;
+        padding: $baseline-half ($baseline + 15);
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .nav-link {
+            font-size: .9em;
+        }
+
+        &.is-fixed {
+            position: relative;
+        }
+    }
 }

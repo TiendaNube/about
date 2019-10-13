@@ -3,6 +3,10 @@
     align-items: center;
     margin-bottom: $baseline;
 
+    @include breakpoint(xs) {
+        flex-direction: column;
+    }
+
     .section-header-title-count {
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,6 +20,10 @@
         font-size: $type-baseline-huge;
         color: $dark-blue;
         font-weight: 500;
+
+        @include breakpoint(xs) {
+            margin-right: 0;
+        }
     }
 }
 

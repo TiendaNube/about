@@ -4,7 +4,7 @@
             <div class="col-sm-3">
                 <a href="{{ site.company_url }}" class="header-logo">{% include svgs/logo_tiendanube.svg fill="#fff" %}</a>
             </div>
-            <div class="col-sm-7 col-sm-offset-2">
+            <div class="col-sm-7 col-sm-offset-2 hidden-xs">
                 <ul class="nav navbar-nav navbar-right">
                     {% for item in site.data.navigation %}
                         <li><a class="navbar-link c-white" href="{{ item.link }}">{{ item.name }}</a></li>
@@ -17,7 +17,7 @@
     <div class="container text-center m-top-double">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="slide-up text-medium c-primary-blue m-none">- {{ page.collection }} -</h2>
+                <h2 class="slide-up text-medium c-primary-blue m-none hidden-xs">- {{ page.collection }} -</h2>
                 <h1 class="slide-up-delay c-white">{{ page.title }}</h1>
             </div>
         </div>
