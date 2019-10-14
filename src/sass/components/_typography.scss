@@ -319,21 +319,10 @@ p {
 
 blockquote {
     position: relative;
-    padding: 10px 20px;
-    margin: 10px 20px;
-    border-left: 0;
+    padding: $baseline;
+    margin: $baseline;
     font-size: $type-baseline-regular;
-
-    &::before {
-        content: '“';
-        font-size: 220px;
-        color: $nube-white;
-        line-height: 0;
-        position: absolute;
-        top: ($baseline * 3);
-        left: -$baseline;
-        z-index: 0;
-    }
+	border-left: 4px solid $color-mid-gray;
 
     p {
         font-size: $type-baseline-regular;
@@ -341,7 +330,7 @@ blockquote {
         z-index: 0;
         position: relative;
         font-style: italic;
-        color: $primary-blue;
+        color: $color-mid-gray;
     }
 }
 

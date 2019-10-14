@@ -27,6 +27,29 @@
     }
 }
 
-.article section {
-    margin-bottom: $baseline-double;
+.article {
+	img {
+		margin: $baseline-half 0;
+		border-radius: 4px;
+		box-shadow: 0 5px 30px rgba(#000,.02);
+
+		+ small {
+			font-style: italic;
+			margin-top: -5px;
+			color: $color-mid-gray;
+		}
+	}
+
+	section {
+		margin-bottom: $baseline-double;
+	}
+
+	ul,
+	ol {
+		margin: $baseline-half;
+
+		li {
+			padding: 10px;
+		}
+	}
 }
