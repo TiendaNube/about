@@ -36,8 +36,10 @@
 
 		+ small {
 			font-style: italic;
-			margin-top: -5px;
+			margin: -5px 0 10px;
 			color: $color-mid-gray;
+			display: block;
+			text-align: center;
 		}
 	}
 

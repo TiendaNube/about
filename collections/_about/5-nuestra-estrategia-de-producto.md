@@ -89,4 +89,5 @@ Imaginemos que hacemos todo y lanzamos, la rompimos! Correcto? Incorrecto.
 
 Y estoy dejando de lado todo el costo de entrenar a CS en la nueva funcionalidad, acciones de comunicación del feature, trabajar en boostear el adoption de las personas que lo pidieron, …
 
-<img src="https://i.imgur.com/4YDMbQn.png">
+<img data-src="http://tinu.be/static/images/11.png" class="lazyload" />
+<small>Legenda de la imagene</small>
