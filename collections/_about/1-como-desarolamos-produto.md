@@ -2,7 +2,7 @@
 layout: playbook
 title:  "Cómo desarrollamos nuestro producto"
 hero_image: ../assets/images/header@2x.jpg
-permalink: /about/como-desarrollamos-en-tiendanube
+permalink: /como-desarrollamos-en-tiendanube
 seo_title: Cómo desarrollamos nuestro producto
 seo_description: En Tiendanube tenemos una forma unica de desarrolar en producto y acá te contamos cómo hacemos.
 ---
