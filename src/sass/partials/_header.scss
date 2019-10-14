@@ -3,14 +3,84 @@
     background-size: cover;
     background-position: top center;
     border-radius: 5px;
-    padding: $baseline-half;
+    padding: $baseline-half 0;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+	margin: 10px;
+
+	@include breakpoint(xs) {
+		.container {
+			width: 100%;
+		}
+	}
 }
 
 .header-logo {
     width: 200px;
-    display: block;
+	display: block;
+
+	@include breakpoint(xs) {
+		width: 180px;
+	}
+}
+
+.toggle-header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.5em;
+	margin: auto;
+	float: right;
+
+	.icon-hamburg {
+		width: 18px;
+		margin-right: $baseline-quarter;
+	}
+}
+
+.mobile-nav {
+	position: fixed;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+    width: 100%;
+	height: 100vh;
+	padding: $baseline 0;
+	display: flex;
+	flex-direction: column;
+	transform: translateX(110%);
+	transition: transform .3s ease;
+
+	&.opened {
+		transform: translateX(0);
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.actions-bottom {
+		margin-top: auto;
+		flex-direction: column;
+		text-align: center;
+		display: flex;
+
+		a {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.mobile-nav-close {
+	background: 0 0;
+    color: $deep-blue;
+    border: 3px solid;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    padding: 0;
+    outline: 0;
 }
