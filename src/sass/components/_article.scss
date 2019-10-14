@@ -29,9 +29,10 @@
 
 .article {
 	img {
-		margin: $baseline-half 0;
+		margin: $baseline-half auto;
 		border-radius: 4px;
 		box-shadow: 0 5px 30px rgba(#000,.02);
+		display: block;
 
 		+ small {
 			font-style: italic;

@@ -8,7 +8,11 @@ const { watch, src, dest, series } = require("gulp"),
 
 const path = {
 	styles: 'src/sass/**/*.scss',
-	scripts: ['node_modules/jquery/dist/jquery.js', 'src/js/components/*.js', 'src/js/*.js'],
+	scripts: [
+		'node_modules/jquery/dist/jquery.js',
+		'node_modules/lazysizes/lazysizes.js',
+		'src/js/components/*.js',
+		'src/js/*.js'],
 	images: 'src/images/**/*.{jpg,gif,png}'
 }
 
