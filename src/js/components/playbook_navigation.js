@@ -44,7 +44,7 @@ function playbookMobileNavigation() {
 
 	// Events
 	$(window).on('scroll', function() {
-		if($(window).scrollTop() > $('.article').offset().top) {
+		if($(window).scrollTop() > ($('.article').offset().top - 50)) {
 			$('.playbook-navigation-mobile').addClass('opened');
 		} else {
 			$('.playbook-navigation-mobile').removeClass('opened');
