@@ -6,4 +6,4 @@ vendor
 Gemfile.lock
 package-lock.json
 node_modules
-assets/
+# assets/

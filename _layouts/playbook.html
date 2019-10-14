@@ -18,7 +18,7 @@
                                 <span class="m-top-quarter">01</span>
                             </div>
 							<div class="section-title-content">
-                            	{% include components/share-icons.html 
+                            	{% include components/share-icons.html
                                     meta_title=page.seo_title
                                     meta_description= page.seo_description
                                     meta_url= page.url
@@ -50,7 +50,7 @@
                                     {% capture section_url %}{{page.url}}/#{{post.slug}}{% endcapture %}
 
                                     <div class="section-title-content">
-                                        {% include components/share-icons.html 
+                                        {% include components/share-icons.html
                                             meta_title = post.title
                                             meta_description = post.excerpt
                                             meta_url = section_url
@@ -60,7 +60,7 @@
                                         <h2 class="m-top-none">{{ post.title }}</h2>
                                     </div>
                                 </header>
-
+                                
                                 {{ post.content | markdownify }}
                             </section>
                         {% endif %}
@@ -68,10 +68,9 @@
                 </article>
             </div>
         </div>
-    </div>
+	</div>
 
-
-
+	{%- include components/playbook-navigation-mobile.html -%}
 </main>
 
 {%- comment -%} Footer {%- endcomment -%}

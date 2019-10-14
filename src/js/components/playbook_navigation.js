@@ -24,3 +24,54 @@ function playbookNavigation() {
 		});
 	});
 }
+
+function playbookMobileNavigation() {
+	var $mobileNavWrapper = $('.js-playbook-navigation-mobile-inner');
+	var $mobileNavCloseButton = $('.js-playbook-navigation-mobile-close');
+	var $mobileNavButton = $('.js-mobile-nav-link');
+	var $mobileNavInner = $('.js-playbook-navigation-content');
+	
+	function openNav() {
+		$mobileNavWrapper.addClass('opened');
+		$mobileNavInner.addClass('hide');
+	}
+
+	function closeNav() {
+		$mobileNavWrapper.removeClass('opened');
+		$mobileNavButton.removeClass('active');
+		$mobileNavInner.addClass('hide');
+	}
+
+	// Events
+	$(window).on('scroll', function() {
+		if($(window).scrollTop() > $('.article').offset().top) {
+			$('.playbook-navigation-mobile').addClass('opened');
+		} else {
+			$('.playbook-navigation-mobile').removeClass('opened');
+		}
+	});
+
+	$mobileNavButton.on('click', function(){
+		var getTarget = $(this).data('target');
+
+		if($mobileNavWrapper.hasClass('opened')) {
+			closeNav();
+		}
+
+		if(getTarget === "top") {
+			$('html, body').animate({ scrollTop: 0 });
+			closeNav();
+			return;
+		}
+		
+		openNav();
+
+		$('.'+getTarget).removeClass('hide');
+		$(this).addClass('active');
+	});
+
+	$mobileNavCloseButton.on('click', function(){
+		closeNav();
+		return false;
+	});
+}
