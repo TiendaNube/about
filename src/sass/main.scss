@@ -1,0 +1,19 @@
+@import 'vendors/bootstrap/bootstrap';
+
+@import 'settings/variables';
+@import 'settings/mixins';
+
+@import 'partials/animations';
+@import 'partials/common';
+@import 'partials/header';
+@import 'partials/footer';
+
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/nav';
+@import 'components/article';
+@import 'components/social-share';
+
+@import 'utils/margins-paddings';
+@import 'utils/colors';
+@import 'utils/helpers';

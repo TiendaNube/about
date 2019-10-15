@@ -1,0 +1,46 @@
+.slide-up {
+    opacity: 0;
+    animation: slide-up 2s forwards;
+    animation-timing-function: $ease-out-expo;
+}
+
+.slide-up-delay {
+    opacity: 0;
+    animation: slide-up 2s forwards;
+    animation-delay: 300ms;
+    animation-timing-function: $ease-out-expo;
+}
+
+.is-fixed {
+	position: fixed;
+}
+
+.d-flex {
+	display: flex;
+
+	&-xs {
+		@include breakpoint(xs){
+			display: flex;
+		}
+	}
+
+}
+
+.align-items-center {
+	align-items: center;
+
+	&-xs {
+		@include breakpoint(xs){
+			align-items: center;
+		}
+	}
+}
+
+.misc {
+	position: absolute;
+}
+
+.misc-top-right {
+	top: -$baseline;
+	right: -$baseline;
+}

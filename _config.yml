@@ -1,0 +1,19 @@
+# Tiendanube
+title: Tiendanube
+email: support@tiendanube.com
+description:
+baseurl: ""
+url: "https://tiendanube.github.io/about"
+company_url: "https://tiendanube.com"
+register_url: "https://tiendanube.com/crear-mi-tienda-online"
+login_url: "https://tiendanube.com/login"
+
+collections:
+  about:
+    output: true
+    permalink: /:collection/:path
+  books:
+    output: true
+    permalink: /:collection/:path
+
+collections_dir: collections
