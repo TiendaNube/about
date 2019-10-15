@@ -47,7 +47,7 @@ Es fundamental que estemos alineados en esto. Por qué? Imaginemos que le decimo
 
 Imaginemos que un cliente nos pide un feature, le decimos que lo hacemos y arrancamos. Otro cliente nos pide un feature, le decimos que lo hacemos y arrancamos. A los 10 clientes, no vamos a tener cómo cumplir la promesa sin faltar a las promesas anteriores. Unos años después y Tiendanube se va a ver así:
 
-<img src="https://i.imgur.com/SC5pmPx.png">
+<img data-src="http://tinu.be/static/images/10.png" class="lazyload" />
 
 Es una relación basada en amenazas. Algún día uno de estos clientes se va a ir (porque no le vamos a dar algo) _pero las funcionalidades que nos pidió para el producto se van a quedar_. “Pero hagámoslo sólo por esta vez, es clave!”. Puede haber excepciones? Sí, claro. El problema es cuando escuchás esa frase 50 veces.
 

@@ -5,7 +5,7 @@
 			<h2>Índice</h2>
 		</div>
 
-		<ul class="list-unstyled">
+		<ul class="list-unstyled p-xs-bottom">
 			{% for post in site.[page.collection] %}
 				<li>
 					<a class="js-anchor nav-link{% if forloop.first %} active{% endif %}" href="#{{ post.slug }}">
