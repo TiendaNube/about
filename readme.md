@@ -9,4 +9,7 @@ To keep worrks finne in all OS, we're using Docker to run the environment, so ru
 
 ```shell
 $ docker-compose up
-``` 
+```
+
+## To writers
+Check out the [wiki with all content guide](https://github.com/TiendaNube/about/wiki)
