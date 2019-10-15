@@ -5,26 +5,26 @@ title:  "Ejecutar soluciones"
 ### Agile como dinámica de trabajo
 Históricamente, los proyectos de software se trabajaban en modo “Waterfall”, es decir que hasta que el producto no esté desarrollado por completo, no se mostraba a los clientes. Es como si Spotify que se fundó en el 2006 recién lance su producto al mercado hoy 2019, 13 años después y vea si alguien quiere usarlo.
 
-<img data-src="http://tinu.be/static/images/01.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/01.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 Uno de los grandes problemas de esta metodología es que, al hablar con el cliente únicamente al principio y al final de un proyecto, se asume que (1) el cliente sabe y nos comunicó de manera excelente lo que necesita (2) el equipo lo entendió a la perfección (3) no hay cambios desde que arranca hasta que termina el proyecto.
 
 Eso hace que Waterfall se sienta como disparar una bala de cañón, una vez que se ajustó la trayectoria no hay manera de corregirla.
 
-<img data-src="http://tinu.be/static/images/02.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/02.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 Después de muchos años (y mucho tiempo/dinero perdido) empezaron a surgir metodologías de trabajo que priorizaban la satisfacción del cliente a través de entregas de valor incrementales de un producto. Ya no se esperaban años para lanzar un producto, sino que se lanzaba en poquitas semanas y luego se va mejorando constantemente.
 
-<img data-src="http://tinu.be/static/images/03.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/03.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 La diferencia de Agile es que al estar en contacto permanente con el cliente podemos descubrir (1) lo que el cliente necesita (2) si realmente lo entendimos (3) si surgen cambios. Así nuestro proyecto deja de ser una bala de cañón y se convierte más en un misil guiado que va ajustando su trayectoria a medida que se acerca al objetivo.
 
 Estamos convencidos que si queremos ser el mejor equipo de LATAM, necesitamos trabajar de manera Agile.
 
-<img data-src="http://tinu.be/static/images/04.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/04.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 ### Pero qué significa ser Agile?
@@ -56,7 +56,7 @@ El Manifesto está basado en 12 principios:
 
 Hay muchos flavors (formas) diferentes de Agile. Tal vez el más conocido de todos es Scrum. Cuál usamos en Tiendanube? Ninguno “de libro”. Tomamos prácticas de Scrum, de XP, Kanban … y las aplicamos de acuerdo a nuestro contexto. Lo que es importante de entender es que los principios si aplican de manera amplia a cualquier ámbito.
 
-<img data-src="http://tinu.be/static/images/05.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/05.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 ### Cómo están conformados los equipos?
@@ -67,7 +67,7 @@ Estos squads ejecutan con autonomía, pero cómo nos aseguramos que estemos todo
 
 Autonomía: sentirse libre para actuar al máximo de tus capacidades para contribuir a un resultado colectivo.
 
-<img data-src="http://tinu.be/static/images/06.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/06.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 #### Pero cómo fomentamos la autonomía? Necesitamos alineación y competencia.
@@ -80,7 +80,7 @@ Tomando el ejemplo de la imagen:
   - Racional: Porque hay tierras más fértiles del otro lado.
   - Límites: No queremos matar a ningún animal.
 
-<img data-src="http://tinu.be/static/images/07.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/07.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 **Competencia**: creencias de trabajo compartidas + excelencia técnica.
@@ -96,11 +96,11 @@ Por eso creemos que seis semanas es el tiempo ideal. Lo suficientemente corto pa
 
 Separamos nuestra ejecución en dos semanas de planning y seis de ejecución. Al final de cada ciclo tenemos una demo para todo el equipo.
 
-<img data-src="http://tinu.be/static/images/08.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/08.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 ### Planning
-<img data-src="http://tinu.be/static/images/09.png" class="lazyload" />
+<img data-src="http://tinu.be/static/images/09.jpg" class="lazyload" />
 <small>Legenda de la imagene</small>
 
 #### Ejecución de cada proyecto durante las seis semanas
