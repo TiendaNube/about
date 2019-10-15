@@ -5,6 +5,11 @@
     <meta charset="utf-8">
 	<title>{{ page.title }} - {{ site.title }}</title>
 	<meta name="description" content="{{ page.seo_description }}"/>
+
+	<meta property="og:url" content="{{ site.url }}"/>
+	<meta property="og:site_name" content="{{ site.title }}"/>
+	<meta property="og:image" content="{{ '/assets/images/og-image.jpg' | prepend: site.url }}">
+
 	{% include partials/fonts.html %}
 
 	<meta name="robots" content="index,follow">
